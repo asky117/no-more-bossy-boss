@@ -47,8 +47,33 @@ html, body {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
 	border-top: 4px solid green;
 }
+div.spec{
+	margin-left: 40px;
+}
+h1.analysis-title{
+		font-size: 3em;
+		font-weight: lighter;
+		text-align: left;
+		margin-top: 32px;
+		margin-bottom: 20px;
+}
 
+h2.analysis-sub-title{
+		font-size: 2em;
+		font-weight: lighter;
+		text-align: left;
+		margin-top: 10px;
+		margin-bottom: 20px;
+}
 
+span.analysis-style-tag{
+		font-size: 1.7em;
+		background-color: #eee;
+		padding: .2em .5em .2em .5em;
+		border-radius: 10px;
+		font-weight: lighter;
+		text-align: left;
+}
 
 
 
