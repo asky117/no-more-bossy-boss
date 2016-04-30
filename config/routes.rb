@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'boss#home'
-
   root 'boss#index'
   get 'step1_website_type' => 'boss#step1_website_type'
   get 'step2_style' => 'boss#step2_style'
