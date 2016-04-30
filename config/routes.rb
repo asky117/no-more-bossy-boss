@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   root 'boss#index'
+  get 'step1_website_type' => 'boss#step1_website_type'
+  get 'step2_style' => 'boss#step2_style'
+  get 'step3_detail' => 'boss#step3_detail'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
