@@ -1,7 +1,22 @@
-<<<<<<< c9320865becf42bd79f5d29a3bbbbfe565a5fcbe
-// Place all the styles related to the Boss controller here.
-=======
-// Place all the styles related to the boss controller here.
->>>>>>> index and boss controller
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.container-fluid{
+	background-color: #f3f3f3;
+	height: 100vh;
+}
+.dialog-container{
+	height: 700px;
+	margin-top: 50px;
+	background-color: #fff;
+	border-radius: 20px;
+	h1{
+		font-size: 3em;
+		font-weight: bold;
+	}
+}
+
+.image-select-container{
+	max-height: 250px;
+	overflow:hidden;
+	image{
+			width:100%;
+	}
+}
