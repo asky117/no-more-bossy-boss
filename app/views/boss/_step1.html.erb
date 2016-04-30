@@ -1,0 +1,8 @@
+<h2 class="index-desc"> 步驟1：選擇網頁類型 </h2>
+
+<%= form_tag step2_style_path, method: :post, remote: true do %>
+    <div class="step1">
+        <%= select_tag "type","<option>type</option><option value='Landing page'>Landing page</option><option value='e-commerse'>商城</option><option value='blog'>部落格</option><option value='website'>主題網頁</option>".html_safe %>
+        <%= submit_tag %>
+    </div>
+<% end %>

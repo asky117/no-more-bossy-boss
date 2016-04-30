@@ -23,7 +23,15 @@ class BossController < ApplicationController
     #     @data << hash
     # end
     # @data
-    style = ["graph", "information"]
+  end
+
+  def analyze_result
+    
+  end
+
+  def step2_style
+    #style = ["graph", "information"]
+    style = [params[:type]]
     key_word = ""
     for key in style
         key_word << key + "%20"
@@ -53,9 +61,12 @@ class BossController < ApplicationController
     @data
   end
 
-  def step2_style
+  def step3_detail
   end
 
-  def step3_detail
+  private
+
+  def apply_params
+    params.require(:boss).permit(:type)
   end
 end

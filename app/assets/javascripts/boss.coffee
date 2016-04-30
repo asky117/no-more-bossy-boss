@@ -3,5 +3,9 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  $("select").imagepicker()
+  $(".select-web-type").imagepicker()
+  return
+
+$ ->
+  $(".select-style").imagepicker()
   return

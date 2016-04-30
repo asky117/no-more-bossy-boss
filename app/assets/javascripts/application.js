@@ -12,5 +12,7 @@
 // 
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require image-picker
+//= require color-thief.min
 //= require boss

@@ -1,9 +1,21 @@
 <h1 class="index-title"> 自己的設計自己想 </h1>
-<h2 class="index-desc"> 步驟1：選擇你要做的網站 </h2>
-<select class="image-picker show-html">
-  <% @data.each_with_index do |d, i| %>
-  <div class="col-md-3 image-select-container">
-    <option data-img-src="<%= d["img"] %>" value="<%= d["tags"] %>"><%= d["tags"] %></option>
+<!-- Nav tabs -->
+<!--   <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#step1" aria-controls="step1" role="tab" data-toggle="tab">選擇類型</a></li>
+    <li role="presentation"><a href="#step2" aria-controls="step2" role="tab" data-toggle="tab">選擇風格</a></li>
+    <li role="presentation"><a href="#step3" aria-controls="step3" role="tab" data-toggle="tab">選擇主視覺</a></li>
+  </ul>
+ -->
+  <!-- Tab panes -->
+  <div class="">
+    <div class="" id="steps">
+		  <%= render partial: "step1" %>	
+    </div>
   </div>
-  <% end %>
-</select>
+
+ <script type="text/javascript">	
+// 	$('.nav a').click(function (e) {
+// 	  e.preventDefault()
+// 	  $(this).tab('show')
+// 	})
+</script>

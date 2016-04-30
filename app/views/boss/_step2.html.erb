@@ -1,0 +1,15 @@
+<h2 class="index-desc"> 步驟2：以下哪個風格符合您的期望 </h2>
+<%= submit_tag ,class:"btn-default btn"%>
+<select class="image-picker show-html select-style">
+  <% @data.each_with_index do |d, i| %>
+  <div class="col-md-3 image-select-container">
+    <option data-img-src="<%= d["img"] %>" value="<%= d["tags"] %>"><%= d["tags"] %></option>
+  </div>
+  <% end %>
+</select>
+
+<script>
+    $(function() {
+        $(".select-style").imagepicker();
+    })
+</script>
