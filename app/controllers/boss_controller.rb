@@ -25,6 +25,10 @@ class BossController < ApplicationController
     @data
   end
 
+  def analyze_result
+    
+  end
+
   def step2_style
   end
 
