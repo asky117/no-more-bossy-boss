@@ -12,9 +12,5 @@
 // 
 //= require jquery
 //= require jquery_ujs
-<<<<<<< 5d8c00685feb638cf0e5a1353ea1a2b91d87c1ec
 //= require image-picker
 //= require boss
-=======
-//= require image-picker
->>>>>>> image layout
