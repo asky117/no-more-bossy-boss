@@ -1,0 +1,8 @@
+<h2 class="index-desc"> 步驟1：選擇網頁類型 </h2>
+<select class="image-picker show-html">
+  <% @data.each_with_index do |d, i| %>
+  <div class="col-md-3 image-select-container">
+    <option data-img-src="<%= d["img"] %>" value="<%= d["tags"] %>"><%= d["tags"] %></option>
+  </div>
+  <% end %>
+</select>

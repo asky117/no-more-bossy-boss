@@ -1,24 +1,24 @@
 <h1 class="index-title"> 自己的設計自己想 </h1>
-<h2 class="index-desc"> 步驟1：選擇你要做的網站 </h2>
-<select class="image-picker show-html">
-  <% @data.each_with_index do |d, i| %>
-  <div class="col-md-3 image-select-container">
-    <option data-img-src="<%= d["img"] %>" value="<%= d["tags"] %>"><%= d["tags"] %></option>
-  </div>
-  <% end %>
-</select>
+<div class="step-section">
+  <%= render partial: "step1" %>
+</div>
+<div class="step-section">
+  <%= render partial: "step2" %>
+</div>
 
 <script type="text/javascript">
 
 var img = new Image();
+
 img.onload = function () {
   var colorThief = new ColorThief();
-  palette = colorThief.getPalette(img,8);
-  show_palette(palette);
+  palette = colorThief.getPalette(img, 8);
+  console.log(palette);
 };
 img.crossOrigin = 'Anonymous';
-img.src = "<%= @data[0]['img'] %>";	
-}
+img.src = "https://d13yacurqjgara.cloudfront.net/users/13307/screenshots/793447/ui-kit_teaser.jpg"
+// }
+
 
 
 </script>
