@@ -19,6 +19,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'httparty'
 gem 'nokogiri'
+gem 'image-picker-rails'
 
 
 group :development, :test do

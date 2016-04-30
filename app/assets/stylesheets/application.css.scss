@@ -10,9 +10,12 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
-
  *= require_self
  *= require image-picker
+<<<<<<< 5d8c00685feb638cf0e5a1353ea1a2b91d87c1ec:app/assets/stylesheets/application.css
+=======
+ *= require boss
+>>>>>>> image layout:app/assets/stylesheets/application.css.scss
  */
 
 @import "bootstrap-sprockets";
