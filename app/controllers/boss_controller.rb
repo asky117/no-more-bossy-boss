@@ -1,5 +1,5 @@
 class BossController < ApplicationController
-  def home
+  def index
     style = ["ui", "web"]
     key_word = ""
     for key in style
