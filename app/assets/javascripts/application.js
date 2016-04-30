@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require image-picker
+//= require color-thief.min
 //= require boss

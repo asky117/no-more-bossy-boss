@@ -7,3 +7,19 @@
   </div>
   <% end %>
 </select>
+
+<script type="text/javascript">
+
+var img = new Image();
+img.onload = function () {
+  var colorThief = new ColorThief();
+  palette = colorThief.getPalette(img,8);
+  show_palette(palette);
+};
+img.crossOrigin = 'Anonymous';
+img.src = "<%= @data[0]['img'] %>";	
+}
+
+
+</script>
+
