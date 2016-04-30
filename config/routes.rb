@@ -4,9 +4,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'boss#index'
-  get 'step1_website_type' => 'boss#step1_website_type'
-  get 'step2_style' => 'boss#step2_style'
-  get 'step3_detail' => 'boss#step3_detail'
+  get 'step1_website_type', to: 'boss#step1_website_type'
+  get 'step2_style', to: 'boss#step2_style'
+  get 'step3_detail', to: 'boss#step3_detail'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

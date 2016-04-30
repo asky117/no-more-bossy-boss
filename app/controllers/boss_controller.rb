@@ -1,5 +1,8 @@
 class BossController < ApplicationController
   def index
+  end
+
+  def step1_website_type
     style = ["ui", "web"]
     key_word = ""
     for key in style
@@ -11,9 +14,6 @@ class BossController < ApplicationController
     for image in html.css("div.pinHolder > a > div.fadeContainer > div.Image.Module.pinUiImage > div > img")[0..10]
         @image << image["src"]
     end
-  end
-
-  def step1_website_type
   end
 
   def step2_style
