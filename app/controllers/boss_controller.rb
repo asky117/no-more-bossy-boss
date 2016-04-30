@@ -3,17 +3,26 @@ class BossController < ApplicationController
   end
 
   def step1_website_type
-    style = ["ui", "web"]
+    style = ["game", "web"]
     key_word = ""
     for key in style
-        key_word << key + "%20"
+        key_word << key + "+"
     end
-
-    html = Nokogiri::HTML(HTTParty.get("https://www.pinterest.com/search/pins/?q=#{key_word}"))
-    @image = []
-    for image in html.css("div.pinHolder > a > div.fadeContainer > div.Image.Module.pinUiImage > div > img")[0..10]
-        @image << image["src"]
+    
+    @data = []
+    html = Nokogiri::HTML(HTTParty.get("https://dribbble.com/search?q=#{key_word}"))
+    for search_result in html.css("ol li.group")[0..3]
+        hash = {}
+        tags = []
+        content = Nokogiri::HTML(HTTParty.get("https://dribbble.com#{search_result.css("a").first['href']}"))
+        for i in content.css("#tags li")
+            tags << i.text.match(/\n\s+(.+)\n/).captures[0]
+        end
+        hash["tags"] = tags
+        hash["img"] = search_result.css("img")[0]["src"]
+        @data << hash
     end
+    @data
   end
 
   def step2_style

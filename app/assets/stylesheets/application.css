@@ -12,6 +12,7 @@
  *
 
  *= require_self
+ *= require image-picker
  */
 
 @import "bootstrap-sprockets";

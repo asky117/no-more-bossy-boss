@@ -1,3 +1,10 @@
-<% for image in @image %>
-  <%= image_tag image %>
+<select class="image-picker show-html">
+<% @data.each_with_index do |d, i| %>
+  <option data-img-src="<%= d["img"] %>" value="<%= i %>"><%= i %></option>
+  <!-- todo: tag list? -->
+  <%# d["tags"].each do |t| %>
+    <!-- <span><%#= t %></span> -->
+    <!-- <br> -->
+  <%# end %>
 <% end %>
+</select>
